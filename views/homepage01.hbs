@@ -1,0 +1,31 @@
+{{!-- <h1>hello world</h1> --}}
+
+{{!-- <script type="text/javascript">
+   // alert("hacked!!");
+</script> --}}
+
+
+{{!-- <h1>
+    hello {{name}}
+</h1> --}}
+
+<p>
+    hello my name is: {{{name}}} and i am {{{age}}} old
+</p>
+{{#if city}}
+<p>
+    i am from : {{city}}
+</p>
+{{else}}
+       <p>i dont know my city</p>
+{{/if}}
+
+<p> my hobbies are:</p>
+{{#each hobbies}} 
+    <b> {{this}}</b></br>
+{{/each}}
+
+{{#unless loggedIn}}    
+{{!-- unless is used to express a line ar expression when it is false --}}
+    <p> you have to logged in to access the page</p>
+{{/unless}}    
